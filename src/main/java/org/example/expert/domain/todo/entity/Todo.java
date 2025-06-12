@@ -17,6 +17,7 @@ import java.util.List;
 @Table(name = "todos")
 public class Todo extends Timestamped {
 
+    public Object getUser;
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String title;
